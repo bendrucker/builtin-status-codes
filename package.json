@@ -2,7 +2,7 @@
   "name": "builtin-status-codes",
   "main": "index.js",
   "browser": "browser.js",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "The map of HTTP status codes from the builtin http module",
   "license": "MIT",
   "repository": "bendrucker/builtin-status-codes",
