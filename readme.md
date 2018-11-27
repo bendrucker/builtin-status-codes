@@ -2,13 +2,11 @@
 
 > The map of HTTP status codes from the builtin http module. Exposes the latest directly from `http` in Node, with a zero-dependencies version for the browser.
 
-
 ## Install
 
 ```
 npm install --save builtin-status-codes
 ```
-
 
 ## Usage
 
