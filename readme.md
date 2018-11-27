@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save builtin-status-codes
+npm install --save builtin-status-codes
 ```
 
 
@@ -23,7 +23,7 @@ codes[100]
 To create a new browser build:
 
 ```sh
-$ npm run build
+npm run build
 ```
 
 ## License
