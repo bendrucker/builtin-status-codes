@@ -11,7 +11,7 @@ npm install --save builtin-status-codes
 ## Usage
 
 ```js
-var codes = require('builtin-status-codes')
+const codes = require('builtin-status-codes')
 codes[100]
 //=> Continue
 ```
