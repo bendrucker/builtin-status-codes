@@ -3,6 +3,7 @@ module.exports = {
   "101": "Switching Protocols",
   "102": "Processing",
   "103": "Early Hints",
+  "104": "Upload Resumption Supported",
   "200": "OK",
   "201": "Created",
   "202": "Accepted",
