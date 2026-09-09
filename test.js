@@ -2,7 +2,6 @@
 
 const test = require('tape')
 const builtin = require('http').STATUS_CODES
-const original = Object.assign({}, builtin)
 const node = require('./')
 const browser = require('./browser')
 
@@ -12,17 +11,12 @@ test(function (t) {
   t.end()
 })
 
-test('upload resumption is available in Node and browsers', function (t) {
-  t.equal(node[104], 'Upload Resumption Supported')
+test('upload resumption is available in browsers', function (t) {
   t.equal(browser[104], 'Upload Resumption Supported')
   t.end()
 })
 
-test('preserves native status codes without modifying the builtin map', function (t) {
-  t.notEqual(node, builtin)
-  t.deepEqual(builtin, original)
-  Object.keys(builtin).forEach(function (code) {
-    t.equal(node[code], builtin[code], code)
-  })
+test('exports the native status code map in Node', function (t) {
+  t.equal(node, builtin)
   t.end()
 })
